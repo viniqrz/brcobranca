@@ -14,8 +14,8 @@ module Brcobranca
         registro_tamanho = record.convenio.to_s.size
         quantidade = if (valor_tamanho > 9) && (registro_tamanho == 8)
                        '9'
-                     elsif (valor_tamanho > 10) && (registro_tamanho == 7)
-                       '10'
+                     elsif (valor_tamanho > 20) && (registro_tamanho == 7)
+                       '20'
                      elsif (valor_tamanho > 7) && (registro_tamanho == 4)
                        '7'
                      elsif (valor_tamanho > 5) && (registro_tamanho == 6) && !record.codigo_servico
